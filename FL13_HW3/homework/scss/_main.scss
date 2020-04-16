@@ -1,0 +1,278 @@
+
+$button_states: (
+    bg: $button-bg,
+    cl: $button-color,
+    bh: $button-hover
+);
+
+$gradient: (
+    color1: $gradient-color-1,
+    color2: $gradient-color-2
+);
+
+@mixin button {
+    padding: 24px 58px;
+    background: map-get($button_states, bg);
+    color: map-get($button_states, cl);
+    box-sizing: border-box;
+    border: 0;
+    outline: 0;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: 600;
+    font-family: $main-font;
+    line-height: 12px;
+    transition: .3s all;
+    &:hover {
+        background: map-get($button_states, bh);
+    }
+}
+
+@mixin footerColor {
+    background: $footer-bg;
+    color: $footer-color;
+}
+
+@mixin readyGradient {
+    background: linear-gradient(to right, map-get($gradient, color1), map-get($gradient, color2));
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: $main-font;
+    font-size: 16px;
+    color: $main-text-color;
+    background: $body-bg-color;
+}
+
+header {
+    min-height: 900px;
+    background-image: $background-header;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 26px 0;
+    box-sizing: border-box;
+    color:$main-text-color;
+    position: relative;
+    border-radius: 0 0 500px;
+}
+
+.header-wrap {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.landing-logo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 160px;
+    margin-bottom: 100px;
+    p {
+        display: flex;
+        flex-direction: column;
+        font-size: 30px;
+        font-weight: 600;
+        text-align: center;
+        line-height: 22px;
+        color: $logo-top-color;
+        span {
+            font-size: 14px;
+            font-weight: 600;
+        }
+    }
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 0;
+}
+.section_card_wrap {
+    max-width: 1120px;
+}
+
+
+.header {
+    
+    &_heading {
+        font-size: 80px;
+        font-weight: 800;
+        position: relative;
+        z-index: 1;
+        margin-bottom: 85px;
+        font-family: $headers-font;
+        // color:
+        &::before {
+            content: '';
+            width: 336px;
+            height: 57px;
+            background: $text-decoration-color;
+            position: absolute;
+            bottom: 13px;
+            left: 0;
+            z-index: -1;
+        }
+    }
+    &_heading , &_text {
+        padding-right: 600px;
+    }
+    &_text {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 30px;
+        margin-bottom: 85px;
+        font-family: 'Hind', sans-serif;
+    }
+    &_button {
+        margin-right: 190px;
+        @include button;
+    }
+}
+
+.login {
+    color: #fff;
+    font-size: 20px;
+    font-family:'Hind', sans-serif;
+    &:hover {
+        text-decoration: none;
+    }
+}
+.section {
+    &_text {
+        font-size: 40px;
+        font-weight: 600;
+        margin-bottom: 60px;
+        position: relative;
+        font-family: $headers-font;
+        &::before {
+            content: '';
+            width: 182px;
+            height: 50px;
+            background: $text-decoration-color;
+            position: absolute;
+            bottom: 5px;
+            right: 11px;
+            z-index: -1;
+        }
+    }
+    &_card {
+        display: flex;
+        justify-content: space-between;
+        background: $section-card-bg;
+        border-radius: 7px;
+        padding: 25px;
+        box-sizing: border-box;
+        min-height: 344px;
+        margin-bottom: 30px;
+        img {
+            border-radius: 7px;
+            height: 294px;
+            object-fit: cover;
+            max-width: 40%;
+        }
+        &_right_container {
+            padding: 0 100px;
+            max-width: 60%;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            a {
+                color: #C0C3CE;
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+        &_heading {
+            font-size: 30px;
+            margin-bottom: 20px;
+            color: #fff;
+            font-family: $headers-font;
+        }
+        &_text {
+            line-height: 30px;
+            color: #C0C3CE;
+            text-align: justify;
+            font-size: 18px;
+            margin-bottom: 23px;
+        }
+    }
+    &_banner {
+        width: 100%;
+        max-width: 1120px;
+        margin: 0 auto;
+        height: 180px;
+        border-radius: 7px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 120px;
+        box-sizing: border-box;
+        position: relative;
+        top: 147px;
+        @include readyGradient;
+
+        &_button {
+            @include button;
+        }
+        &_heading {
+            font-size: 37px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            position: relative;
+            z-index: 1;
+            font-family: $headers-font;
+            &::before {
+                content: '';
+                width: 83px;
+                height: 55px;
+                background: $text-decoration-color;
+                position: absolute;
+                bottom: 2px;
+                right: 273px;
+                z-index: -1;
+            }
+        }
+        &_text {
+            color: #C0C3CE;
+            font-size: 18px;
+        }
+    }
+}
+.footer {
+    @include footerColor;
+    padding: 165px 0 70px 0;
+    &-wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+        max-width: 1120px;
+    }
+    .landing-logo {
+        margin-bottom: 0;
+        p {
+            color: $logo-bot-color;
+        }
+    }
+    &_text {
+        @extend .section_banner_text;
+        font-size: 16px;
+        max-width: 340px;
+    }
+}
+
+
+
+
+
