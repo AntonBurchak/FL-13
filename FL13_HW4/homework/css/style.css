@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Merriweather', serif;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+header {
+    background: #fff;
+}
+
+.wrapper {
+    max-width: 1130px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.header__name {
+    color: #555555;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 4px;
+}
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 86px;
+}
+.header__nav a {
+    color:#7B868D;
+    margin-right: 44px;
+    transition: .2s color;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+.header__nav a:last-child {
+    margin-right: 0;
+}
+.header__nav a:hover {
+    color: #CBBF55;
+}
+
+.hero {
+    height: calc(100vh - 86px);
+    background: url(../img/home-bg.jpg);
+    background-position: center 0;
+    background-size: cover;
+    position: relative;
+}
+.hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0, .7);
+    z-index: 0;
+}
+.hero__inner {
+    height: 100%;
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+.hero__heading {
+    font-size: 60px;
+    margin-bottom: 15px;
+}
+.hero__subheading {
+    color: #B9AF4B;
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-size: 14px;
+    margin-bottom: 54px;
+}
+
+.news {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 113px 10px;
+    box-sizing: border-box;
+}
+.news__article {
+    max-width: 945px;
+    width: 100%;
+    height: fit-content;
+    padding-bottom: 65px;
+    margin-bottom: 86px;
+    border-bottom: 1px solid #F0F0F0;
+}
+.news__article:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: 0;
+}
+.news__article-img {
+    width: 100%;
+    height: 530px;
+    position: relative;
+    margin-bottom: 35px;
+}
+.news__article-img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.news__article-name {
+    font-weight: 700;
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+.news__article-postInfo {
+    display: flex;
+    align-items: center;
+    color: #333;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+.news__article-postInfo > * {
+    margin-right: 20px;
+}
+.news__article-postInfo > *:last-child {
+    margin-right: 0;
+} 
+.news__article-author {
+    display: flex;
+    align-items: center;
+}
+
+.news__article-author img {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+.news__article-comments {
+    display: flex;
+    align-items: center;
+}
+.news__article-comments i {
+    margin-right: 4px;
+}
+.news__article-text {
+    color:#848280;
+    font-size: 14px;
+    line-height: 26px;
+    margin-bottom: 20px;
+}
+.news__article-more.link {
+    border: 1px solid #ccc;
+    display: inline-block;
+    font-size: 13px;
+    text-transform: none;
+    letter-spacing: 1px;
+    color: #777777;
+    border-radius: 30px;
+}
+
+.footer {
+    padding: 100px 15px;
+    box-sizing: border-box;
+    background: #000;
+    display: flex;
+    justify-content: center;
+}
+
+.footer__inner {
+    max-width: 945px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__heading {
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.footer__info {
+    max-width: 420px;
+}
+
+.footer__text {
+    margin-bottom: 25px;
+}
+
+.f-text {
+    color: #707173;
+    font-size: 14px;
+    text-decoration: none;
+    line-height: 26px;
+}
+a.f-text:hover {
+    color: #fff;
+}
+
+.footer__list li {
+    margin-bottom: 10px;
+}
+
+.link {
+    padding: 16px 24px;
+    color: #444;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: #fff;
+    border-radius: 22px;
+    transition: .2s all;
+}
+.link:hover {
+    color: #fff;
+    background: #B9AF4B;
+}
