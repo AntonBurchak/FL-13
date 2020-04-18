@@ -58,7 +58,10 @@ header {
     box-sizing: border-box;
     color:$main-text-color;
     position: relative;
-    border-radius: 0 0 500px;
+    border-top-left-radius: 0 110%;
+    border-top-right-radius: 0 80%;
+    border-bottom-right-radius: 80% 80%;
+    border-bottom-left-radius: 0 80%;
 }
 
 .header-wrap {
