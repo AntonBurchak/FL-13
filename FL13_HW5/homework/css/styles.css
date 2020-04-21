@@ -283,19 +283,27 @@ body {
 .main__ivent:hover {
 	cursor: pointer;
 }
-
-.main__ivent:hover::after {
-	opacity: .5;
+.main__ivent-img,
+.main__ivent-text {
+	background: inherit;
 }
 
-.main__ivent::after {
+.main__ivent-img:hover::after,
+.main__ivent-text:hover::after {
+	opacity: .5;
+	z-index: 1;
+}
+
+
+.main__ivent-img::after, 
+.main__ivent-text::after {
 	content: '';
 	width: 100%;
 	height: 100%;
 	position: absolute;
 	top: 0;
 	left: 0;
-	z-index: 0;
+	z-index: -1;
 	background: inherit;
 	opacity: 0;
 	transition: .3s all;
@@ -304,7 +312,11 @@ body {
 .header__nav a:hover {
 	background: #445570;
 }
-
+@media (max-width: 1400px) {
+	body {
+		font-size: 15px;
+	}
+}
 @media (max-width: 768px) {
 	.main__ivents {
 		width: 55%;
