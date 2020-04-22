@@ -189,30 +189,32 @@ both          <b>spaces</b> and
                                 <form>
                                     <label>
                                         Name:
-                                        <input type="text" required>
+                                        <input type="text" name="name" required>
                                     </label>
                                     <br>
                                     <label>
                                         Email:
-                                        <input type="email" required>
+                                        <input type="email" name="mail" required>
                                     </label>
                                     <br>
                                     <label>
                                         Password:
-                                        <input type="password" required>
+                                        <input type="password" name="password" required>
                                     </label>
                                     <br>
                                     <label>
                                         Select programming Language:
-                                        <select required>
-                                            <option value="JavaScript">JavaScript</option>
-                                            <option value=".Net">.Net</option>
-                                            <option value="Java">Java</option>
+                                        <select name="language">
+                                            <optgroup label="Chose language">
+                                                <option value="JavaScript">JavaScript</option>
+                                                <option value=".Net">.Net</option>
+                                                <option value="Java">Java</option>
+                                            </optgroup>
                                         </select>
                                     </label>
                                     <br>
                                     <br>
-                                    <textarea cols="23" rows="3"></textarea>
+                                    <textarea cols="23" rows="3" name="message"></textarea>
                                     <br>
                                     <button>Submit</button>
                                 </form>
