@@ -57,8 +57,6 @@ const start = (settings) => {
 
     while (counter > 0) {
         const randomNumber = getRandomNumber(settings.randoms.min, settings.randoms.max * settings.state);
-        console.log(randomNumber);
-
         const playerNumber = prompt(`
         Choose a roulette pocket number from ${settings.randoms.min} to ${settings.randoms.max * settings.state}
         Attempts left: ${counter}
