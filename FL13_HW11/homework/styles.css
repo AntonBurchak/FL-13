@@ -1,0 +1,69 @@
+/* TODO: your styles goes here*/
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: arial, sans-serif;
+}
+#root li {
+    display: flex;
+    cursor: pointer;
+    list-style: none;
+    flex-direction: column;
+    position: relative;
+}
+#root li:hover > p {
+    background: #E3E3E3;
+}
+#root li p {
+    display: flex;
+    align-items: center;
+    transition: .1s background;
+    padding: 5px;
+}
+#root li i {
+    margin-right: 5px;
+}
+#root li.folder i {
+    color: #EDBC0B;
+}
+#root li.file i {
+    color: #B0B0B0;
+}
+ul {
+    margin-left: 20px;
+}
+ul.hide {
+    display: none;
+}
+ul.active {
+    display: block;
+}
+li.empty {
+    font-style: italic;
+}
+
+ol.menu {
+    display: none;
+    flex-direction: column;
+    width: fit-content;
+    padding: 8px;
+    background: #E3E3E3;
+    position: absolute;
+}
+ol.menu li {
+    list-style: none;
+    margin-bottom: 2px;
+    font-size: 14px;
+    cursor: pointer;
+}
+ol.menu li:hover {
+    text-decoration: underline;
+}
+ol.menu li:last-child {
+    margin-bottom: 0;
+}
+ol.menu.show-menu {
+    display: flex;
+}
