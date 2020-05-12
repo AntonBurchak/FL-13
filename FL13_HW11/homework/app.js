@@ -137,13 +137,11 @@ function onMouseDown(e) {
       elem.offsetParent.remove();
       checkIsEmpty()
     }
-
     hideMenu();
   } else {
     hideMenu();
     document.removeEventListener('mousedown', onMouseDown);
   }
-
 }
 document.addEventListener('contextmenu', onContextMenu, false);
 
