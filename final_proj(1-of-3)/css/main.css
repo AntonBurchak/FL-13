@@ -1451,6 +1451,7 @@ body {
   width: 100%;
   height: 100%;
   color: #4D4949;
+  font-weight: 400;
 }
 
 .clear {
@@ -1556,8 +1557,9 @@ body {
   font-size: 17px;
   margin-bottom: 22px;
 }
-.intro__btrs {
-  height: auto;
+.intro__btns {
+  min-height: 45px;
+  display: flex;
 }
 .intro__btn {
   padding: 9px 26px;
@@ -1568,14 +1570,28 @@ body {
   border-radius: 5px;
   transition: 0.3s all;
 }
-.intro__btn:hover, .intro__btn.active {
+.intro__btn:hover {
+  text-decoration: none;
+  background: #393737;
+  color: #fff;
+}
+.intro__btn.primary {
   background: #4D4949;
   color: #fff;
-  text-decoration: none;
 }
-.intro__btn.active:hover {
-  background: transparent;
+.intro__btn.primary:hover {
+  background: #393737;
+}
+.intro__btn.disabled {
+  opacity: 0.4;
+}
+.intro__btn.disabled:hover {
+  background: none;
   color: #4D4949;
+}
+.intro__btn.disabled:hover.primary {
+  background: #4D4949;
+  color: #fff;
 }
 .intro__btn:nth-child(1) {
   margin-right: 25px;
