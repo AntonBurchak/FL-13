@@ -12,7 +12,40 @@
         text-align: center;
         margin-bottom: 20px;
     }
-    .intro__heading {
+    .intro__heading,
+    .about-us__slider-nav {
         padding-right: 0;
+    }
+    .about-us__slider-content {
+        padding-left: 0;
+    }
+    // .about-us__slider-nav {
+    //     margin-bottom: 40px;
+    // }
+    .about-us__slider-nav {
+        display: block;
+        
+    }
+    .about-us__slider-nav-item {
+        padding: 0 5px;
+    }
+    .about-us__slider-content-video {
+        min-height: 292px;
+    }
+    .section-heading__subtitle {
+        padding: 0 15% !important;
+    }
+}
+@media (max-width:$phone-size) {
+    .about-us__slider-nav {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    .about-us__slider-nav-item {
+        @include make-xs-column(12)
+    }
+    .section-heading__subtitle {
+        padding: 0 5% !important;
     }
 }
