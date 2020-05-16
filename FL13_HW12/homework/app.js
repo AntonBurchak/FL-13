@@ -95,12 +95,12 @@ const root = document.getElementById('root');
     }
 
 
-    function bookEdit(uid) {
-        const data = JSON.parse(localStorage.getItem('books'));
-        const book = data.find(book => book.uid === +uid);  
+    // function bookEdit(uid) {
+    //     const data = JSON.parse(localStorage.getItem('books'));
+    //     const book = data.find(book => book.uid === +uid);  
 
 
-    }
+    // }
 
 
     window.onpopstate = function() {
