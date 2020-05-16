@@ -49,3 +49,8 @@
         padding: 0 5% !important;
     }
 }
+@media (max-width: $screen-md) {
+    .posts__item {
+        margin-bottom: 20px;
+    }
+}

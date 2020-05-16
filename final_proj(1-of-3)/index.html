@@ -16,10 +16,10 @@
                 </div> <!--row-->
                 <div class="header__nav"> <!--col-lg-10 col-sm-12-->
                     <nav>
-                        <a href="#">Home</a>
-                        <a href="#">Portfolio</a>
-                        <a href="#">Blog</a>
-                        <a href="#">Pages</a>
+                        <a href="#intro">Home</a>
+                        <a href="#about-us">Portfolio</a>
+                        <a href="#posts">Blog</a>
+                        <a href="#portfolio">Pages</a>
                         <a href="#">About</a>
                         <a href="#">Contact</a>
                     </nav>
@@ -29,7 +29,7 @@
         </div>
     </header>
     <main>
-        <section class="intro">
+        <section class="intro" id="intro">
             <div class="wrapper">
                 <div class="intro__inner">
                     <div class="intro__main"> <!--col-lg-7 col-md-5-->
@@ -43,18 +43,18 @@
                 </div>
             </div>
         </section>
-        <section class="about-us">
+        <section class="about-us" id="about-us">
             <div class="wrapper">
                 <div class="about-us__inner">
                     <div class="about-us__heading section-heading">
-                        <span>
+                        <div>
                             <h2 class="section-heading__title">About us</h2>
                             <div class="section-heading__figure">
                                 <div class="section-heading__figure-fr1"></div>
                                 <div class="section-heading__figure-fr2"></div>
                                 <div class="section-heading__figure-fr3"></div>
                             </div>
-                        </span>
+                        </div>
                         
                         <p class="section-heading__subtitle h-subtitle">This is who we are - or at least who we strive to be…</p>
                     </div>
@@ -114,29 +114,158 @@
                 </div>
             </div>
         </section>
-        <section class="posts">
+        <section class="posts" id="posts">
             <div class="wrapper">
                 <div class="posts__inner">
                     <div class="posts__heading section-heading">
-                        <span>
+                        <div>
                             <h2 class="section-heading__title">Latest posts</h2>
                             <div class="section-heading__figure">
                                 <div class="section-heading__figure-fr1"></div>
                                 <div class="section-heading__figure-fr2"></div>
                                 <div class="section-heading__figure-fr3"></div>
                             </div>
-                        </span>
+                        </div>
                         
                         <p class="section-heading__subtitle">Information is a source of learning. But unless it is organized, processed and available to the right people</p>
                     </div>
-                    <div class="posts__main">
-                        <article class="posts__item col-lg-4 col-md-4 col-sm-12">
-                            
+                    <div class="posts__main row">
+                        <article class="posts__item" aria-label="post item">
+                                <div class="posts__item-image">
+                                    <img src="images/img-post1.png" alt="">
+                                </div>
+                                <a class="posts__item-title" href="#">In the Future We Will All Live in Star Wars</a>
+                                <p class="posts__item-text">The thing you’re doing now, reading prose on a screen, is going out of fashion. The defining narrative of our online moment concerns the decline of text, and the exploding reach and power of audio and video…</p>
+                                <div class="posts__item-info">
+                                    <time class="posts__item-date" datetime="2019-10-20">20 oct, 2019</time>
+                                    <p class="posts__item-timeRead">10 min read</p>
+                                    <p class="posts__item-comments">
+                                        <img src="images/a-icon-comment.svg" alt="">
+                                        <span class="posts__item-quantity-comments">11</span>
+                                    </p>
+                                </div>
                         </article>
+                        <article class="posts__item" aria-label="post item">
+                                <div class="posts__item-image">
+                                    <img src="images/img-post2.png" alt="">
+                                </div>
+                                <a class="posts__item-title" href="#">Rubik’s Cube? No, Robotics and AI are…</a>
+                                <p class="posts__item-text">In other words, I will try to de-hype the crowd about the recent development in robotics. Concretely, OpenAI has claimed some pretty amazing results with learning to solve the Rubik’s cube with a robotic hand…</p>
+                                <div class="posts__item-info">
+                                    <time class="posts__item-date" datetime="2019-10-11">11 oct, 2019</time>
+                                    <p class="posts__item-timeRead">7 min read</p>
+                                    <p class="posts__item-comments">
+                                        <img src="images/a-icon-comment.svg" alt="">
+                                        <span class="posts__item-quantity-comments">19</span>
+                                    </p>
+                                </div>
+                        </article>
+                        <article class="posts__item" aria-label="post item">
+                                <div class="posts__item-image">
+                                    <img src="images/img-post3.png" alt="">
+                                </div>
+                                <a class="posts__item-title" href="#">How the Internet of Things will Transfo…</a>
+                                <p class="posts__item-text">The Internet of Things (IoT) promises to be the most important technological development for consumers since the advent of the smartphone. Experts believe that this collection of internet-connected technolog…</p>
+                                <div class="posts__item-info">
+                                    <time class="posts__item-date" datetime="2019-09-28">28 sep, 2019</time>
+                                    <p class="posts__item-timeRead">16 min read</p>
+                                    <p class="posts__item-comments">
+                                        <img src="images/a-icon-comment.svg" alt="">
+                                        <span class="posts__item-quantity-comments">41</span>
+                                    </p>
+                                </div>
+                        </article>       
+                        <div class="clear"></div>
                     </div>
                 </div>
             </div>
         </section>
+        <section class="portfolio" id="portfolio">
+            <div class="wrapper">
+                <div class="portfolio__inner">
+                    <div class="posts__heading section-heading">
+                        <div>
+                            <h2 class="section-heading__title">Latest portfolio</h2>
+                            <div class="section-heading__figure">
+                                <div class="section-heading__figure-fr1"></div>
+                                <div class="section-heading__figure-fr2"></div>
+                                <div class="section-heading__figure-fr3"></div>
+                            </div>
+                        </div>
+                        <p class="section-heading__subtitle">Put there articles successfully special warrant submit agree what along then</p>
+                    </div>
+                    <div class="portfolio__slider">
+                        <div class="portfolio__main">
+                            <div class="portfolio__item">
+                                <div class="portfolio__item-wrap">
+                                    <div class="portfolio__item-img">
+                                        <img src="images/pr-img1.png" alt="" class="portfolio__item-img">
+                                    </div>
+                                    <div class="portfolio__item-text">
+                                        <h4>Art Ocean</h4>
+                                        <p>Photography, art, nature</p>
+                                    </div>
+                                    <div class="portfolio__item-controls">
+                                        <div class="portfolio__item-link"><img src="images/a-icon-attach.svg" alt=""></div>
+                                        <div class="portfolio__item-search"><img src="images/a-icon-search.svg" alt=""></div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="portfolio__item">
+                                <div class="portfolio__item-wrap">
+                                    <div class="portfolio__item-img">
+                                        <img src="images/pr-img2.png" alt="" class="portfolio__item-img">
+                                    </div>
+                                    <div class="portfolio__item-text">
+                                        <h4>City guide</h4>
+                                        <p>Photography, city, way</p>
+                                    </div>
+                                    <div class="portfolio__item-controls">
+                                        <div class="portfolio__item-link"><img src="images/a-icon-attach.svg" alt=""></div>
+                                        <div class="portfolio__item-search"><img src="images/a-icon-search.svg" alt=""></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="portfolio__item">
+                                <div class="portfolio__item-wrap">
+                                    <div class="portfolio__item-img">
+                                        <img src="images/pr-img3.png" alt="" class="portfolio__item-img">
+                                    </div>
+                                    <div class="portfolio__item-text">
+                                        <h4>Mountains</h4>
+                                        <p>Art, hiking</p>
+                                    </div>
+                                    <div class="portfolio__item-controls">
+                                        <div class="portfolio__item-link"><img src="images/a-icon-attach.svg" alt=""></div>
+                                        <div class="portfolio__item-search"><img src="images/a-icon-search.svg" alt=""></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio__controls">
+                            <div class="portfolio__controls-items">
+                                <div class="portfolio__controls-arrows">
+                                    <div class="portfolio__controls-left">
+                                        <div class="arrow left"></div>
+                                    </div>
+                                    <div class="portfolio__controls-right">
+                                        <div class="arrow right"></div>
+                                    </div>
+                                </div>
+                                <a href="#" class="portfolio__controls-btn btn">See all works</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
     </main>
+    <div class="scrollTop"></div>
+
+
+    <script src="js/index.js"></script>
 </body>
 </html>
