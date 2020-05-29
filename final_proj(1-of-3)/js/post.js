@@ -64,7 +64,7 @@
                         </div>
                         <div class="comments__list-body">
                             <p>${comment.body.length <= 200 ? comment.body : comment.body.slice(0, 200) + '...'}</p>
-                            ${comment.body.length <= 200 ? '' : '<a href="#" class="comments__list-more">Read more</a>'}
+                            ${comment.body.length <= 200 ? '' : '<a href="#" class="comments__list-more clk">Read more</a>'}
                             
                             </div>
                     </div>
@@ -109,4 +109,49 @@
         }
     });
 
+
+    const categories = document.querySelector('.post__categories-items');
+    categories.addEventListener('click', (e) => {
+        const category = e.target.offsetParent;
+        category.classList.toggle('active');
+    });
+
+    const likeBtn = document.querySelector('.post__likes');
+
+    const colors = ['#4287f5', '#42f5c8', '#f59042', '#e0f542', '#7b42f5', '#ec42f5', '#f54242', '#9cf542', '#d1002d', '#3400d1']
+    const likeButton = document.querySelector('.post__likes-icon');
+    for(let i = 1; i <= 10; i++) {
+        likeButton.innerHTML += `<div class="circle circle-anim circle-${i}" style="background: ${colors[i - 1]};"></div>`;
+    }
+    const circles = likeButton.querySelectorAll('.circle');
+    function likeAnimate() {
+        
+        circles.forEach(circle => {
+            circle.classList.add('active');
+        });
+    }
+
+
+    
+    likeBtn.addEventListener('click', () => {
+        
+        let quantityLikes = +likeBtn.getAttribute('data-likes');
+        
+        if(likeBtn.classList.contains('post__likes--active')) {
+            quantityLikes--;
+            circles.forEach(circle => {
+                circle.classList.remove('active');
+            });
+        } else {
+            quantityLikes++;
+            likeAnimate();
+        }
+        likeBtn.classList.toggle('post__likes--active');
+        likeBtn.setAttribute('data-likes', quantityLikes);
+        likeBtn.querySelector('span').textContent = quantityLikes;
+    });
+
+    
+
+    
 })();
