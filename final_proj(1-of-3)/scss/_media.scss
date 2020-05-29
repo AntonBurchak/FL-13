@@ -81,7 +81,9 @@
     .testimonials__slider-slide {
 		@include make-sm-column(8);
     }
-    
+    .blogPosts__item-pretext {
+        padding-right: 0;
+    }
 }
 @media (max-width: 768px) {
     .portfolio__item {
@@ -159,5 +161,25 @@
     .intro {
         min-height: fit-content;
         padding: 100px 0 50px 0;
+    }
+
+    .footer__logo {
+        padding-left: 0;
+    }
+    
+    .blogPosts__more {
+        margin-bottom: 70px;
+    }
+}
+@media (max-width: 380px) {
+    .blog__search-result, 
+    .blog__search-result ul {
+        width: 100%;
+    }
+    .blogPosts__item-img {
+        min-height: 200px;
+    }
+    .blogPosts__item-text:after {
+        content: none
     }
 }

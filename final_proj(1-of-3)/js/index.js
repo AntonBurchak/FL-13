@@ -104,5 +104,8 @@
     });
   })
 
+  if(document.querySelector('audio')) {
+    document.querySelector('audio').volume = .3;
+  }
 })();
 
