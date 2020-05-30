@@ -9,14 +9,24 @@
     anchor.addEventListener('click', function (e) {
       e.preventDefault();
 
+      if (currentPage == 'index') {
+        if(anchor.className === 'scrollTop active') {
+          anchor.setAttribute('href', '#head')
+          document.querySelector('a[href="#intro"]').classList.add('active')
+        } else {
+            document.querySelector('a[href="#intro"]').classList.remove('active')
 
-      if(anchor.className === 'scrollTop active') {
+        }
+      } else {
+        if(anchor.className === 'scrollTop active') {
           anchor.setAttribute('href', '#head')
           document.querySelector('a[href="#head"]').classList.add('active')
-      } else {
-          document.querySelector('a[href="#head"]').classList.remove('active')
+        } else {
+            document.querySelector('a[href="#head"]').classList.remove('active')
 
+        }
       }
+     
 
       const blockID = anchor.getAttribute('href').substr(1)
       
