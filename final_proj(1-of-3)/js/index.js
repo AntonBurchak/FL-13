@@ -11,10 +11,10 @@
 
 
       if(anchor.className === 'scrollTop active') {
-          anchor.setAttribute('href', '#intro')
-          document.querySelector('a[href="#intro"]').classList.add('active')
+          anchor.setAttribute('href', '#head')
+          document.querySelector('a[href="#head"]').classList.add('active')
       } else {
-          document.querySelector('a[href="#intro"]').classList.remove('active')
+          document.querySelector('a[href="#head"]').classList.remove('active')
 
       }
 

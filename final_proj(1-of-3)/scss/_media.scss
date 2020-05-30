@@ -102,6 +102,9 @@
     .comments__list {
         margin-bottom: 30px;
     }
+    .blogPosts__item-img img {
+        width: 100%;
+    }
 }
 @media (max-width: 768px) {
     .portfolio__item {
@@ -214,10 +217,6 @@
 @media (max-width: 480px) {
     .comments__list-item > img {
         display: none;
-    }
-    .comments__list:after,
-    .comments__list:before {
-        // content: none;
     }
     .post__image {
         min-height: 280px;

@@ -13,15 +13,15 @@
          <div class="close menu-toggle"></div>
          <h2>BlogWorld</h2>
          <nav>
-            <a href="#intro">Home</a>
-            <a href="#about-us">Portfolio</a>
-            <a href="#posts">Blog</a>
-            <a href="#portfolio">Pages</a>
-            <a href="#testimonials">About</a>
-            <a href="#">Contact</a>
+            <a href="./">Home</a>
+            <a href="">Portfolio</a>
+            <a href="blog.html" class="active">Blog</a>
+            <a href="">Pages</a>
+            <a href="">About</a>
+            <a href="">Contact</a>
          </nav>
       </div>
-      <header class="header">
+      <header class="header" id="head">
          <div class="wrapper">
             <!--container-->
             <div class="header__inner">
@@ -35,11 +35,11 @@
                   <!--col-lg-10 col-sm-12-->
                   <nav>
                      <a href="./">Home</a>
-                     <a href="#about-us">Portfolio</a>
-                     <a href="#posts" class="active">Blog</a>
-                     <a href="#portfolio">Pages</a>
-                     <a href="#testimonials">About</a>
-                     <a href="#">Contact</a>
+                     <a href="">Portfolio</a>
+                     <a href="blog.html" class="active">Blog</a>
+                     <a href="">Pages</a>
+                     <a href="">About</a>
+                     <a href="">Contact</a>
                   </nav>
                   <div class="header__burger menu-toggle">
                      <div></div>
@@ -275,24 +275,45 @@
          </div>
       </footer>
       <div class="foreword">
-         <div class="close"></div>
-         <h3 class="foreword__heading">Приветствую!</h3>
+         <div class="close"><img src="images/close.svg" alt=""></div>
+         <h3 class="foreword__heading">Привет! &#128165;</h3>
          <h5 class="foreword__about">EPAM - компания в которую я пробуюсь не первый год, но к сожалению предыдущие попытки были четными. В этот раз я поставил задачу перед собой - пройти любой ценой, и буду делать всё для этого!</h5>
          <p class="foreword__text">Я постарался выложиться на максимум, и сделать то, чем я буду доволен. Я решил сделать все интерактивные элементы из макета живыми, а не просто версткой! Ниже, есть кнопка подсветки элементов которые несут функционал.</p>
          <p class="foreword__text">Очень надеюсь, что вам понравится моя работа :)</p>
          <hr>
          <button id="backlightOn">Включить подсветку</button>
+         <button id="openAnimationOn">Включить анимацию перехода на сайт</button>
+         <p class="notation"></p>
          <hr>
          <div class="foreword__files">
             <p class="foreword__files-text">Задействованные файлы на этой странице:</p>
-            <div class="foreword__files-file"><a href="" target="_blank"><span><img src="images/javascript.svg" alt=""></span> post.js</a></div>
-            <div class="foreword__files-file"><a href="" target="_blank"><span><img src="images/javascript.svg" alt=""></span> index.js</a></div>
+            <div class="foreword__files-file"><a href="https://github.com/AntonBurchak/FL-13/blob/HW9_final/final_proj(1-of-3)/js/post.js" target="_blank"><span><img src="images/javascript.svg" alt=""></span> post.js</a></div>
+            <div class="foreword__files-file"><a href="https://github.com/AntonBurchak/FL-13/blob/HW9_final/final_proj(1-of-3)/js/index.js" target="_blank"><span><img src="images/javascript.svg" alt=""></span> index.js</a></div>
+            <div class="foreword__files-file"><a href="https://github.com/AntonBurchak/FL-13/blob/HW9_final/final_proj(1-of-3)/js/backlight.js" target="_blank"><span><img src="images/javascript.svg" alt=""></span> backlight.js</a></div>
          </div>
-         <p class="foreword__text">Если по вашему мнению качества этой работы недостаточно что бы пройти на следующий этап, посмотрите, пожалуйста, <a href="https://antonburchak.github.io/lab-work/">еще один мой проект</a></p>
-
+         <p class="foreword__text">Если по вашему мнению качества этой работы недостаточно что бы пройти на следующий этап, посмотрите, пожалуйста, <a href="https://antonburchak.github.io/lab-work/" target="_blank">еще один мой проект</a></p>
+         <p class="foreword__text">А если вы еще дадите обратную связь по поводу качества кода, я буду вообще счастлив! &#128525;&#128525;&#128525;</p>
+         <h4 class="foreword__about">Необходимые настройки и размеры при проверке перфект-пиксель верстки данной страницы через плагин <a href="https://chrome.google.com/webstore/detail/perfectpixel-by-welldonec/dkaagdgjmgdmbnecmcefdhjekcoceebi?hl=ru" target="_blank">"Perfect Pixel"</a></h5>
+            <table>
+               <thead>
+                  <tr>
+                     <td>X axis <small>(px)</small></td>
+                     <td>Y axis <small>(px)</small></td>
+                     <td>Size <small>(%/100)</small></td>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td>232</td>
+                     <td>-3</td>
+                     <td>0.5</td>
+                  </tr>
+               </tbody>
+            </table>
       </div>
       <img src="images/a-icon-like-hover.svg" alt="" class="hidden">
       <img src="images/a-icon-like-active.svg" alt="" class="hidden">
+      <div class="openForeword"></div>
       <div class="scrollTop"></div>
       <script src="js/index.js"></script>
       <script src="js/post.js"></script>

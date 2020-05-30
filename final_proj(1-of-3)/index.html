@@ -13,7 +13,7 @@
          <div class="close menu-toggle"></div>
          <h2>BlogWorld</h2>
          <nav>
-            <a href="#intro">Home</a>
+            <a href="#head">Home</a>
             <a href="#about-us">Portfolio</a>
             <a href="./blog.html">Blog</a>
             <a href="#portfolio">Pages</a>
@@ -22,7 +22,7 @@
          </nav>
       </div>
       <!-- <div class="container"> -->
-         <header class="header">
+         <header class="header" id="head">
             <div class="wrapper">
                <!--container-->
                <div class="header__inner">
@@ -129,7 +129,7 @@
                         <div class="about-us__slider-content">
                            <div class="about-us__slider-content-video">
                               <img src="images/video.png" class="content-video" alt="About us">
-                              <img src="images/a-icon-play.svg" class="content-play" alt="play">
+                              <img src="images/a-icon-play.svg" class="content-play clk" alt="play">
                            </div>
                         </div>
                         <div class="clear"></div>
@@ -219,7 +219,7 @@
                      </div>
                      <div class="portfolio__slider">
                         <div class="portfolio__main">
-                           <div class="portfolio__item">
+                           <div class="portfolio__item clk">
                               <div class="portfolio__item-wrap">
                                  <div class="portfolio__item-img">
                                     <img src="images/pr-img1.png" alt="" class="portfolio__item-img">
@@ -229,8 +229,8 @@
                                     <p>Photography, art, nature</p>
                                  </div>
                                  <div class="portfolio__item-controls">
-                                    <div class="portfolio__item-link"><img src="images/a-icon-attach.svg" alt=""></div>
-                                    <div class="portfolio__item-search"><img src="images/a-icon-search.svg" alt=""></div>
+                                    <div class="portfolio__item-link clk"><img src="images/a-icon-attach.svg" alt=""></div>
+                                    <div class="portfolio__item-search clk"><img src="images/a-icon-search.svg" alt=""></div>
                                  </div>
                               </div>
                            </div>
@@ -268,10 +268,10 @@
                         <div class="portfolio__controls">
                            <div class="portfolio__controls-items">
                               <div class="portfolio__controls-arrows">
-                                 <div class="portfolio__controls-left">
+                                 <div class="portfolio__controls-left clk">
                                     <div class="arrow left"></div>
                                  </div>
-                                 <div class="portfolio__controls-right">
+                                 <div class="portfolio__controls-right clk">
                                     <div class="arrow right"></div>
                                  </div>
                               </div>
@@ -295,7 +295,7 @@
                      </div>
                   </div>
                   <div class="testimonials__slider ">
-                     <div class="testimonials__slider-prev">
+                     <div class="testimonials__slider-prev clk">
                         <div class="arrow left"></div>
                      </div>
                      <div class="testimonials__slider-slide">
@@ -310,7 +310,7 @@
                            <img src="images/user-img.png" alt="">
                         </div>
                      </div>
-                     <div class="testimonials__slider-next">
+                     <div class="testimonials__slider-next clk">
                         <div class="arrow right"></div>
                      </div>
                   </div>
@@ -377,14 +377,14 @@
                                        <label class="label-pass">
                                           <span>
                                              <span>Password</span>
-                                             <span id="togglePass">
+                                             <span id="togglePass" class="clk">
                                                 <img src="images/a-icon-showpass.svg" alt="">
                                                 <span>Show</span>
                                              </span>
                                           </span>
                                           <input type="password" name="password" class="hide" required>
                                        </label>
-                                       <button class="primary">Send message</button>
+                                       <button class="primary clk">Send message</button>
       
                                        <p class="contactUs__form-description">
                                           If you need to have a DNA first, just contact us at <a href="mailto:email@gmail.com">email@gmail.com</a> 
@@ -421,8 +421,46 @@
             </div>
          </footer>
       <!-- </div> -->
-      
+      <div class="foreword">
+         <div class="close"><img src="images/close.svg" alt=""></div>
+         <h3 class="foreword__heading">Привет! &#128165;</h3>
+         <h5 class="foreword__about">EPAM - компания в которую я пробуюсь не первый год, но к сожалению предыдущие попытки были четными. В этот раз я поставил задачу перед собой - пройти любой ценой, и буду делать всё для этого!</h5>
+         <p class="foreword__text">Я постарался выложиться на максимум, и сделать то, чем я буду доволен. Я решил сделать все интерактивные элементы из макета живыми, а не просто версткой! Ниже, есть кнопка подсветки элементов которые несут функционал либо имеют эффекты при наведении.</p>
+         <p class="foreword__text">Очень надеюсь, что вам понравится моя работа :)</p>
+         <hr>
+         <button id="backlightOn">Включить подсветку</button>
+         <button id="openAnimationOn">Включить анимацию перехода на сайт</button>
+         <p class="notation"></p>
+         <hr>
+         <div class="foreword__files">
+            <p class="foreword__files-text">Задействованные файлы на этой странице:</p>
+            <div class="foreword__files-file"><a href="https://github.com/AntonBurchak/FL-13/blob/HW9_final/final_proj(1-of-3)/js/index.js"><span><img src="images/javascript.svg" alt=""></span> index.js</a></div>
+            <div class="foreword__files-file"><a href="https://github.com/AntonBurchak/FL-13/blob/HW9_final/final_proj(1-of-3)/js/backlight.js"><span><img src="images/javascript.svg" alt=""></span> backlight.js</a></div>
+         </div>
+         <p class="foreword__text">Если по вашему мнению качества этой работы недостаточно что бы пройти на следующий этап, посмотрите, пожалуйста, <a href="https://antonburchak.github.io/lab-work/">еще один мой проект</a></p>
+         <p class="foreword__text">А если вы еще дадите обратную связь по поводу качества кода, я буду вообще счастлив! &#128525;&#128525;&#128525;</p>
+         <p class="foreword__text"><a href="https://t.me/antonburchak">Telegram</a></p>
+         <h4 class="foreword__about">Необходимые настройки и размеры при проверке перфект-пиксель верстки данной страницы через плагин <a href="https://chrome.google.com/webstore/detail/perfectpixel-by-welldonec/dkaagdgjmgdmbnecmcefdhjekcoceebi?hl=ru">"Perfect Pixel"</a></h5>
+         <table>
+            <thead>
+               <tr>
+                  <td>X axis <small>(px)</small></td>
+                  <td>Y axis <small>(px)</small></td>
+                  <td>Size <small>(%/100)</small></td>
+               </tr>
+            </thead>
+            <tbody>
+               <tr>
+                  <td>232</td>
+                  <td>0</td>
+                  <td>0.75</td>
+               </tr>
+            </tbody>
+         </table>
+      </div>
+      <div class="openForeword"></div>
       <div class="scrollTop"></div>
       <script src="js/index.js"></script>
+      <script src="js/backlight.js"></script>
    </body>
 </html>
