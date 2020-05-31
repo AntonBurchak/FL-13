@@ -20,9 +20,9 @@
       } else {
         if(anchor.className === 'scrollTop active') {
           anchor.setAttribute('href', '#head')
-          document.querySelector('a[href="#head"]').classList.add('active')
+          document.querySelector('*[href="#head"]').classList.add('active')
         } else {
-            document.querySelector('a[href="#head"]').classList.remove('active')
+            document.querySelector('*[href="#head"]').classList.remove('active')
 
         }
       }
