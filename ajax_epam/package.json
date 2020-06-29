@@ -2,9 +2,9 @@
   "name": "webpacktemplate",
   "version": "1.0.0",
   "description": "",
-  "main": "webpack.config.js",
+  "main": "webpack.base.config.js",
   "scripts": {
-    "dev": "webpack-dev-server --open --config webpack.dev.config.js",
+    "dev": "node server.js --open --config webpack.dev.config.js",
     "build": "webpack --config webpack.build.config.js"
   },
   "browserslist": [
@@ -35,7 +35,15 @@
     "webpack": "^4.29.5",
     "webpack-cli": "^3.2.3",
     "webpack-dev-server": "^3.1.14",
-    "webpack-merge": "^4.2.1"
+    "webpack-merge": "^4.2.1",
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "mongoose": "^5.1.5",
+    "nconf": "^0.10.0",
+    "q": "^1.5.1",
+    "swagger-ui-express": "^3.0.10",
+    "winston": "^2.4.2",
+    "yamljs": "^0.3.0"
   },
   "dependencies": {
     "bootstrap-sass": "^3.4.1"
