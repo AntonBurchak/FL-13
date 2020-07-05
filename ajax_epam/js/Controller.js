@@ -91,9 +91,11 @@ class Controller {
             console.log('its post page')
             const id = window.location.href.split('id=')[1];
             console.log(Server.api.find + id)
-            
+
             Server.connect('GET', Server.api.find + id).then(data => { 
                 console.log(data);
+                Parser.parsePost('.post__main', data);
+
             })
         }
     }
