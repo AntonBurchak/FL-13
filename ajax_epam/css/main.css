@@ -3574,7 +3574,7 @@ body {
   background-image: url(../images/a-icon-playmini.svg);
 }
 
-.blogPosts__item--music .blogPosts__item-text:after {
+.blogPosts__item--audio .blogPosts__item-text:after {
   background-image: url(../images/a-icon-melody.svg);
 }
 
@@ -4450,6 +4450,9 @@ body {
     padding-right: 20px;
     padding-left: 20px;
   }
+  .blogPosts__item-text:after {
+    background-color: rgb(255, 255, 255, 0.3);
+  }
 }
 @media (max-width: 992px) and (min-width: 768px) {
   .testimonials__slider-slide {
@@ -4665,4 +4668,128 @@ body {
   }
 }
 
+.newPost {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: #cec;
+  z-index: 10;
+  transition: .5s left;
+  display: flex;
+  justify-content: center;
+  padding: 100px 20px 20px 2px;
+  overflow: auto;
+}
+.newPost .close {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  top: 20px;
+  right: 20px;
+  background-image: url(../images/close.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  cursor: pointer;
+}
+.newPost.active {
+  left: 0;
+}
+.newPost__wrapper {
+  min-width: 400px;
+
+}
+.newPost__type {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+.newPost__type label{
+  background: #fff;
+  border-radius: 5px;
+  border:2px solid #fff;
+  width: 24%;
+}
+.newPost input, .newPost textarea{
+  width: 100%;
+  margin: 10px 0;
+  padding: 7px 10px;
+  border: 0;
+  border-radius: 5px;
+}
+.newPost textarea {
+  resize: none;
+  height: 150px;
+}
+.newPost__type label div {
+  padding: 5px 10px;
+  cursor: pointer;
+}
+.newPost__type input[type=radio] {
+  display: none;
+}
+.newPost__type input:checked + label{
+  border:2px solid green;
+}
+.newPost__info {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.newPost__info input {
+  width: 48%;
+}
+.newPost button {
+  width: 100%;
+  margin: 10px 0;
+  background: rgb(93, 222, 73);
+  border: 0;
+  padding: 7px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.newPost h3 {
+  font-size: 24px;
+  font-weight: 600;
+}
+.notification {
+  position: fixed;
+  top: calc(50% - 120px/2);
+  left: calc(50% - 250px/2);
+  width: 250px;
+  height: 120px;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 99;
+}
+.notification.error {
+  background:red;
+}
+.notification.success {
+  background:green;
+}
+.notification p {
+  margin-top: 10px;
+  color: #fff;
+}
+.notification .close {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  /* background: yellow; */
+  background: url(../images/close.png);
+  background-size: contain;
+  cursor: pointer;
+}
+.notification.hide {
+  display: none;
+  z-index: -1;
+}
 /*# sourceMappingURL=main.css.map */

@@ -35,6 +35,7 @@
                   <!--col-lg-10 col-sm-12-->
                   <nav>
                      <a href="./">Home</a>
+                     <a href="#" class="add-new-post">Add new post</a>
                      <a href="">Portfolio</a>
                      <a href="blog.html" class="active">Blog</a>
                      <a href="">Pages</a>
@@ -116,7 +117,76 @@
 
                         <section class="comments">
                             <h2 class="comments__heading">Reviews</h2>
-                            <ul class="comments__list"></ul>
+                            <ul class="comments__list">
+                              <li class="comments__list-item" data-hash="12KAfhqncfl396">
+                                      <img src="images/Neil80.png" alt="">
+                                      <div class="comments__list-text">
+                                          <div class="comments__list-author">
+                                              <div class="comments__list-first">
+                                                  <p class="comments__list-name">Jack Johnson</p>
+                                                  <div class="posts__item-stars">
+                                                      <div class="star star--active"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div>
+                                                  </div>
+                                              </div>
+                                              <div class="comments__list-sec">
+                                                  <img src="images/a-icon-time.svg" alt="">
+                                                  <p>11 min ago</p>
+                                              </div>
+                                          </div>
+                                          <div class="comments__list-body">
+                                              <p>Knowledge nay estimable questions repulsive daughters boy. Solicitude gay way unaffected expression for. His mistress ladyship required off horrible disposed rejoiced This text helps web designers bet...</p>
+                                              <a href="#" class="comments__list-more clk">Read more</a>
+                                              
+                                              </div>
+                                      </div>
+                                  </li>
+                              
+                              <li class="comments__list-item" data-hash="82uKwadoYefl326">
+                                      <img src="images/Sarah80.png" alt="">
+                                      <div class="comments__list-text">
+                                          <div class="comments__list-author">
+                                              <div class="comments__list-first">
+                                                  <p class="comments__list-name">Emma Garcia</p>
+                                                  <div class="posts__item-stars">
+                                                      <div class="star star--active"></div><div class="star star--active"></div><div class="star star--active"></div><div class="star star--active"></div><div class="star star--active"></div>
+                                                  </div>
+                                              </div>
+                                              <div class="comments__list-sec">
+                                                  <img src="images/a-icon-time.svg" alt="">
+                                                  <p>3 days ago</p>
+                                              </div>
+                                          </div>
+                                          <div class="comments__list-body">
+                                              <p>Dummy text refers to the bits of content that are used to fill a website mock-up. This text helps web designers better envision how the website will look as a finished product. in wish very strangers ...</p>
+                                              <a href="#" class="comments__list-more clk">Read more</a>
+                                              
+                                              </div>
+                                      </div>
+                                  </li>
+                              
+                              <li class="comments__list-item" data-hash="66LVoosjqsfl346">
+                                      <img src="images/Ann80.png" alt="">
+                                      <div class="comments__list-text">
+                                          <div class="comments__list-author">
+                                              <div class="comments__list-first">
+                                                  <p class="comments__list-name">Ann Moore</p>
+                                                  <div class="posts__item-stars">
+                                                      <div class="star star--active"></div><div class="star star--active"></div><div class="star star--active"></div><div class="star"></div><div class="star"></div>
+                                                  </div>
+                                              </div>
+                                              <div class="comments__list-sec">
+                                                  <img src="images/a-icon-time.svg" alt="">
+                                                  <p>a week ago</p>
+                                              </div>
+                                          </div>
+                                          <div class="comments__list-body">
+                                              <p>Any delicate you how kindness horrible outlived servants. You high bed wish help call draw side. Girl quit if case mr sing as no have. At none neat am do over will. Polite do object at passed it is.</p>
+                                              
+                                              
+                                              </div>
+                                      </div>
+                                  </li>
+                              </ul>
                             <div class="comments__more">
                               <a href="#" class="comments__more-link">More comments</a>
                             </div>
@@ -311,12 +381,59 @@
                </tbody>
             </table>
       </div>
+
+      <div class="newPost">
+         <div class="newPost__wrapper">
+            <h3>Add new post</h3>
+            <form action="#" class="newPost__form">
+               <input type="text" name="title" placeholder="Title" required>
+               <input type="text" name="description" placeholder="Post description" required>
+
+               <div class="newPost__type">
+                  <input type="radio" name="type" value="text" id="txt" checked>
+                  <label for="txt">
+                     <div>Text</div>
+                  </label>
+
+                  <input type="radio" name="type" value="video" id="vid">
+                  <label for="vid">
+                     <div>Video</div>
+                  </label>
+                  
+                  <input type="radio" name="type" value="audio" id="aud">
+                  <label for="aud">
+                     <div>Audio</div>
+                  </label>
+         
+                  <input type="radio" name="type" value="picture" id="pic">
+                  <label for="pic">
+                     <div>Picture</div>
+                  </label>
+               </div>
+               <input type="text" name="image" placeholder="Image link" required>
+               <input type="text" name="quote" placeholder="Quote" required>
+               <textarea name="text" placeholder="Type your text here" required></textarea>
+               <div class="newPost__info">
+                  <input type="text" name="author" placeholder="Author (type full name)" required>
+                  <input type="date" name="date" disabled>
+               </div>
+               <button>Add new post</button>
+            </form>
+         </div>
+         <div class="close close-form"></div>
+      </div>
+
       <img src="images/a-icon-like-hover.svg" alt="" class="hidden">
       <img src="images/a-icon-like-active.svg" alt="" class="hidden">
       <div class="openForeword"></div>
       <div class="scrollTop"></div>
-      <script src="js/index.js"></script>
-      <script src="js/post.js"></script>
-      <script src="js/backlight.js"></script>
+      <script src="js/other/index.js"></script>
+      <script src="js/other/backlight.js"></script>
+
+      <script src="js/Notification.js"></script>
+      <script src="js/Server.js"></script>
+      <script src="js/Controller.js"></script>
+      <script src="js/Validator.js"></script>
+      <script src="js/Parser.js"></script>
    </body>
 </html>
