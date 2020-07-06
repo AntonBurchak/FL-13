@@ -20,10 +20,10 @@ class Parser {
       splitted.forEach((el, index) => {
          
       })
-      for (let i = 0; i < array.length; i++) {
-         const element = array[i];
+      // for (let i = 0; i < array.length; i++) {
+      //    const element = array[i];
          
-      }
+      // }
       console.log(splitted)
       return text;
    }

@@ -11,6 +11,14 @@ class Validator {
                 return true;
             }
         }
+
+        function checkCharcode(title) {
+            for (let i = 0; i < title.length; i++) {
+                console.log(title.charCodeAt(i))
+            }
+        }
+        checkCharcode(title);
+
         return false;
     }
 }

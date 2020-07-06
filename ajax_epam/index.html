@@ -36,7 +36,7 @@
                      <!--col-lg-10 col-sm-12-->
                      <nav>
                         <a href="#intro">Home</a>
-                        <a href="#" class="add-new-post">Add new post</a>
+                        <a href="" class="add-new-post">Add new post</a>
                         <a href="#about-us">Portfolio</a>
                         <a href="./blog.html">Blog</a>
                         <a href="#portfolio">Pages</a>
@@ -461,7 +461,57 @@
       </div>
       <div class="openForeword"></div>
       <div class="scrollTop"></div>
+
+      <div class="newPost">
+         <div class="newPost__wrapper">
+            <h3>Add new post</h3>
+            <form action="#" class="newPost__form">
+               <input type="text" name="title" placeholder="Title" required>
+               <input type="text" name="description" placeholder="Post description" required>
+
+               <div class="newPost__type">
+                  <input type="radio" name="type" value="text" id="txt" checked>
+                  <label for="txt">
+                     <div>Text</div>
+                  </label>
+
+                  <input type="radio" name="type" value="video" id="vid">
+                  <label for="vid">
+                     <div>Video</div>
+                  </label>
+                  
+                  <input type="radio" name="type" value="audio" id="aud">
+                  <label for="aud">
+                     <div>Audio</div>
+                  </label>
+         
+                  <input type="radio" name="type" value="picture" id="pic">
+                  <label for="pic">
+                     <div>Picture</div>
+                  </label>
+               </div>
+               <input type="text" name="image" placeholder="Image link" required>
+               <input type="text" name="quote" placeholder="Quote" required>
+               <textarea name="text" placeholder="Type your text here" required></textarea>
+               <div class="newPost__info">
+                  <input type="text" name="author" placeholder="Author (type full name)" required>
+                  <input type="date" name="date" disabled>
+               </div>
+               <button>Add new post</button>
+            </form>
+         </div>
+         <div class="close close-form"></div>
+      </div>
+
+      <div class="notification"></div>
+
       <script src="js/other/index.js"></script>
       <script src="js/other/backlight.js"></script>
+
+      <script src="js/Notification.js"></script>
+      <script src="js/Server.js"></script>
+      <script src="js/Controller.js"></script>
+      <script src="js/Validator.js"></script>
+      <script src="js/Parser.js"></script>
    </body>
 </html>
