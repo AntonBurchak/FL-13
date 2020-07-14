@@ -50,4 +50,9 @@
     }
     .testimonials__slider-main {
         transition: .3s all;
+        display: flex;
+        overflow: hidden;
+    }
+    .testimonials__slider-slide {
+        max-width: 50% !important;
     }

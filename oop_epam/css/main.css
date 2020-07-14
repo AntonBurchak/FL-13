@@ -2661,19 +2661,19 @@ body {
   justify-content: space-between;
 }
 @media (min-width: 768px) {
-  .testimonials__slider-slide {
+  .testimonials__slider-main {
     float: left;
     width: 50%;
   }
 }
 @media (min-width: 992px) {
-  .testimonials__slider-slide {
+  .testimonials__slider-main {
     float: left;
     width: 50%;
   }
 }
 @media (min-width: 1200px) {
-  .testimonials__slider-slide {
+  .testimonials__slider-main {
     float: left;
     width: 50%;
   }

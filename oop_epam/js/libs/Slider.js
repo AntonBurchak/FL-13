@@ -3,14 +3,14 @@ class Slider {
     constructor(options) {
         const {parent, wrapper, arrowLeft, arrowRight, eachItemClass} = options;
         const {slidesPerView = 3, isAutoPlay = true, delayBeforeAutoplay = 5000,
-               autoPlaySpeed = 2000, changeSlidesAnimationSpeed} = options;
+               autoPlaySpeed = 2000, changeSlidesAnimationSpeed, percents = 100} = options;
         // Find all required html elements
         this._parent = this.find(parent);
         this._wrapper = this.find(wrapper);
         this._arrowLeft = this.find(arrowLeft);
         this._arrowRight = this.find(arrowRight);
         this._items = this.find(eachItemClass, true);
-
+        this.percents = percents;
         this._draw = this._items; // Copy main array with slides
 
         // this._wrapper.style.transform = 'translateX(-0px)';
@@ -63,7 +63,7 @@ class Slider {
     }
 
     initItems() {
-        const percents = 100; // %
+        const percents = this.percents; // %
         const width = percents / Math.round(this.slidesPerView);
         Array.from(this._items).forEach(item => {
             // item.style.transform = `translateX(0px)`

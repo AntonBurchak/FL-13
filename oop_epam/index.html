@@ -330,13 +330,25 @@
                      <div class="testimonials__slider-prev clk">
                         <div class="arrow left"></div>
                      </div>
-                     <div class="testimonials__slider-main testimonials__slider-slide">
+                     <div class="testimonials__slider-main">
                         <div class="testimonials__slider-slide">
                            <div class="testimonials__slider-text">
                               <blockquote>We move at a fast pace. I’m always working on something. I am excited about it!</blockquote>
                               <cite>
                               <span>Martin Oda</span>
                               <span>Product desgner</span>
+                              </cite>
+                           </div>
+                           <div class="testimonials__slider-img">
+                              <img src="images/user-img.png" alt="">
+                           </div>
+                        </div>
+                        <div class="testimonials__slider-slide">
+                           <div class="testimonials__slider-text">
+                              <blockquote>We move at a fast pace. I’m always working on something. I am excited about it!</blockquote>
+                              <cite>
+                              <span>Anton Burchak</span>
+                              <span>Junior Front-end developer</span>
                               </cite>
                            </div>
                            <div class="testimonials__slider-img">
@@ -516,7 +528,8 @@
             isAutoPlay: true, 
             delayBeforeAutoplay: 100, 
             autoPlaySpeed: 2000, 
-            changeSlidesAnimationSpeed: 100
+            changeSlidesAnimationSpeed: 100,
+            
          }
          new Slider({
             ...structure,
@@ -538,8 +551,8 @@
             slidesPerView: 1, 
             isAutoPlay: false, 
             delayBeforeAutoplay: 100, 
-            autoPlaySpeed: 2000, 
-            changeSlidesAnimationSpeed: 100
+            autoPlaySpeed: 1000, 
+            changeSlidesAnimationSpeed: 200
          }
          new Slider({
             ...structure,
