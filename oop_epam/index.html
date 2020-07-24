@@ -511,7 +511,8 @@
       <script src="js/other/index.js"></script>
       <script src="js/other/backlight.js"></script>
 
-      <script src="js/libs/Slider.js"></script>
+      <!-- <script src="js/libs/Slider_ES6.js"></script> -->
+      <script src="js/libs/Slider_Func-inherit.js"></script>
 
       <script>
          {const structure = {
@@ -531,11 +532,20 @@
             changeSlidesAnimationSpeed: 100,
             
          }
-         new Slider({
+         // ES6
+         // new Slider({
+         //    ...structure,
+         //    ...controls,
+         //    ...config
+         // });
+
+         // Functional inheritance
+         new PortfolioSlider({
             ...structure,
             ...controls,
             ...config
-         });}
+         })
+      }
       </script>
       <script>
         { const structure = {
@@ -554,11 +564,21 @@
             autoPlaySpeed: 1000, 
             changeSlidesAnimationSpeed: 200
          }
-         new Slider({
+         // ES6
+         // new Slider({
+         //    ...structure,
+         //    ...controls,
+         //    ...config
+         // });
+
+         // Functional inheritance
+         new TestimonialsSlider({
             ...structure,
             ...controls,
             ...config
-         });}
+         })
+         }
+         
       </script>
    </body>
 </html>
